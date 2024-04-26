@@ -22,5 +22,5 @@
 
   ```sh
   ## If you want to set all of your branches to automatically use this remote repository when you use git pull, add --set-upstream to the push:
-  $ git push --all --set-upstream origin
+  $ git push --all -u origin
   ```
