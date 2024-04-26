@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'echo Hello from fix-123 branch'
                 sh 'mvn --version'
             }
         }
