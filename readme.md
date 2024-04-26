@@ -8,31 +8,19 @@
 
 ## Binding to remote origin:
 
-1. Create a remote origin
-###```sh
-$ git remote add origin <remote_repo_URL>
-
-2. Set a remote tracking branch for local master branch to be able to push the changes to remote repo
-Set
-###```sh
-$ git branch --set-upstream-to=origin/master master
-```
-
-3. Synchronize HEAD ref between remote and local master branches
-### ```sh
-$ git pull --rebase origin master
-
-4. Push local commits to remote branch
-### ```sh
-$ git push
+   ```sh
+   ## 1. Create a remote origin
+   $ git remote add origin <remote_repo_URL>
+   ## 2. Set a remote tracking branch for local master branch to be able to push the changes to remote repo
+   $ git branch --set-upstream-to=origin/master master
+   ## 3. Synchronize HEAD ref between remote and local master branches
+   $ git pull --rebase origin master
+   ## Push local commits to remote branch
+   $ git push
+  ```
 
 
-
-
-$ git pull
-$ git push --all origin
-```
-If you want to set all of your branches to automatically use this remote repository when you use git pull, add --set-upstream to the push:
-### ```
-$ git push --all --set-upstream origin
-```
+  ```sh
+  ## If you want to set all of your branches to automatically use this remote repository when you use git pull, add --set-upstream to the push:
+  $ git push --all --set-upstream origin
+  ```
